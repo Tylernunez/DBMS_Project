@@ -8,3 +8,4 @@ E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.SqlServer.xml
 E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.csprojResolveAssemblyReference.cache
 E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.exe
 E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.pdb
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\DBMS.exe.config
