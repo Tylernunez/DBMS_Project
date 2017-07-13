@@ -1,0 +1,10 @@
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\DBMS.exe.config
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\DBMS.exe
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\DBMS.pdb
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.dll
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.SqlServer.dll
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.xml
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.SqlServer.xml
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.csprojResolveAssemblyReference.cache
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.exe
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.pdb
