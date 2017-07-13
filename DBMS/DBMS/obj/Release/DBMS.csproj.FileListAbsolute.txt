@@ -1,0 +1,9 @@
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\DBMS.exe.config
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\DBMS.exe
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\DBMS.pdb
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\EntityFramework.dll
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\EntityFramework.xml
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Release\DBMS.exe
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Release\DBMS.pdb

@@ -1,0 +1,2 @@
+CREATE TABLE Student (FName varchar(256));
+ 
