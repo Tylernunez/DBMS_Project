@@ -9,3 +9,12 @@ E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.csprojResolveAssemblyRefer
 E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.exe
 E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.pdb
 C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\DBMS.exe.config
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\DBMS.exe
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\DBMS.pdb
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.dll
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.xml
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Debug\DBMS.exe
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Debug\DBMS.pdb
+C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Debug\DBMS.csprojResolveAssemblyReference.cache

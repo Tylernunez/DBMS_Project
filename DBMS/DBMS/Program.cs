@@ -12,12 +12,24 @@ namespace DBMS
     {
         static void Main(string[] args)
         {
+            string line; 
+            // Read the file and display it line by line.
+            System.IO.StreamReader file =
+               new System.IO.StreamReader("queries.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                Console.WriteLine(line);
+                ExecuteLine(line);
+            }
+
+            file.Close();
+
             using (var db = new UniversityContext())
             {
                 
-                var firstName = new Student { FName = "Bob" };
+                /*var firstName = new Student { FName = "Bob" };
                 db.Students.Add(firstName);
-                db.SaveChanges();
+                db.SaveChanges();*/
 
                 // Display all students from the database 
                 var query = from b in db.Students
@@ -29,15 +41,25 @@ namespace DBMS
 
                  db.Database.ExecuteSqlCommand(input);
                  */
-                Console.WriteLine("All students in the database:");
+                /*Console.WriteLine("All students in the database:");
                 foreach (var item in query)
                 {
                     Console.WriteLine(item.FName);
-                }
+                }*/
             }
         }
 
-        
+        public static void ExecuteLine(string command)
+        {
+            using (var db = new UniversityContext())
+            {
+                db.Database.ExecuteSqlCommand(command);
+                //CREATE TABLE tableTest(test1 varchar(255), test2 int, test3 varchar(255));
+                //INSERT INTO tableTest(test1, test2, test3) VALUES('hello', 28, 'goodbye');
+                //CREATE VIEW viewTest AS SELECT test1, test2, test3 FROM tableTest;
+                //DROP TABLE Students;
+            }
+        }
     }
     
 }

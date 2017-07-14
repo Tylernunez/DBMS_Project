@@ -1,0 +1,2 @@
+CREATE TABLE tableTest(test1 varchar(255), test2 int, test3 varchar(255));
+DROP TABLE tableTest;
