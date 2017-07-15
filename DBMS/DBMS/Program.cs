@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
 
 namespace DBMS
 {
@@ -51,15 +52,39 @@ namespace DBMS
 
         public static void ExecuteLine(string command)
         {
+            var word = command.Substring(0, command.IndexOf(' '));
+            if (word == "SELECT")
+            {
+                select(command);
+                return;
+            }
+            
             using (var db = new UniversityContext())
             {
-               
-                 var result = db.Database.SqlQuery<string>(command);
-                Console.WriteLine(result);
+                db.Database.ExecuteSqlCommand(command);
+                
                 //CREATE TABLE tableTest(test1 varchar(255), test2 int, test3 varchar(255));
                 //INSERT INTO tableTest(test1, test2, test3) VALUES('hello', 28, 'goodbye');
                 //CREATE VIEW viewTest AS SELECT test1, test2, test3 FROM tableTest;
                 //DROP TABLE Students;
+            }
+        }
+        
+        public static void select(string command)
+        {
+
+            using (var db = new UniversityContext())
+            {
+
+                var obContext = ((IObjectContextAdapter)db).ObjectContext;
+                IEnumerable<Object> results = obContext.ExecuteStoreQuery<Object>(command);
+                foreach(Object i in results)
+                {
+                    string print = i.ToString();
+                    Console.Write(print);
+                }
+                
+                
             }
         }
     }
