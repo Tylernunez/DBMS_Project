@@ -18,11 +18,11 @@ namespace DBMS
                new System.IO.StreamReader("queries.txt");
             while ((line = file.ReadLine()) != null)
             {
-                Console.WriteLine(line);
                 ExecuteLine(line);
             }
-
+            Console.ReadLine();
             file.Close();
+
 
             using (var db = new UniversityContext())
             {
@@ -53,7 +53,9 @@ namespace DBMS
         {
             using (var db = new UniversityContext())
             {
-                db.Database.ExecuteSqlCommand(command);
+               
+                 var result = db.Database.SqlQuery<string>(command);
+                Console.WriteLine(result);
                 //CREATE TABLE tableTest(test1 varchar(255), test2 int, test3 varchar(255));
                 //INSERT INTO tableTest(test1, test2, test3) VALUES('hello', 28, 'goodbye');
                 //CREATE VIEW viewTest AS SELECT test1, test2, test3 FROM tableTest;

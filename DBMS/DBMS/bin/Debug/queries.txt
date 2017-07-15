@@ -1,2 +1,4 @@
 CREATE TABLE tableTest(test1 varchar(255), test2 int, test3 varchar(255));
+INSERT INTO tableTest(test1, test2, test3) VALUES('hello', 28, 'goodbye');
+SELECT * FROM tableTest;
 DROP TABLE tableTest;
