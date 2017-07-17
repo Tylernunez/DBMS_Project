@@ -18,3 +18,6 @@ C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\bin\Debug\En
 C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Debug\DBMS.exe
 C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Debug\DBMS.pdb
 C:\Users\James\Documents\School\Summer 2017\CMPS 339\DBMS\DBMS\DBMS\obj\Debug\DBMS.csprojResolveAssemblyReference.cache
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.Migrations.AddMigrationAddMI.resources
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.csproj.GenerateResource.Cache
+E:\School\CMPS\CMPS_339\DBMS\DBMS\DBMS\obj\Debug\DBMS.Migrations.removeID.resources

@@ -54,6 +54,15 @@
   <ItemGroup>
     <Compile Include="commandParser.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="dbResult.cs" />
+    <Compile Include="Migrations\201707170307279_Add-Migration AddMI.cs" />
+    <Compile Include="Migrations\201707170307279_Add-Migration AddMI.Designer.cs">
+      <DependentUpon>201707170307279_Add-Migration AddMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707170521230_removeID.cs" />
+    <Compile Include="Migrations\201707170521230_removeID.Designer.cs">
+      <DependentUpon>201707170521230_removeID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +72,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707170307279_Add-Migration AddMI.resx">
+      <DependentUpon>201707170307279_Add-Migration AddMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707170521230_removeID.resx">
+      <DependentUpon>201707170521230_removeID.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
