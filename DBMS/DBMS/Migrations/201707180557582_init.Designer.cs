@@ -7,13 +7,13 @@ namespace DBMS.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddMigrationAddMI : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddMigrationAddMI));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201707170307279_Add-Migration AddMI"; }
+            get { return "201707180557582_init"; }
         }
         
         string IMigrationMetadata.Source

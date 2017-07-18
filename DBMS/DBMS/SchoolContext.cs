@@ -7,9 +7,11 @@ using System.Data.Entity;
 
 namespace DBMS
 {
-    public class UniversityContext : DbContext
+    public class SchoolContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Semester> Semesters { get; set; }
+        public DbSet<Courses_Taken> Taken_Courses { get; set; } 
     }
 }

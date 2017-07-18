@@ -11,10 +11,9 @@ namespace DBMS
     {
         public int Id { get; set; }
         public string FName { get; set; }
-        public char MI { get; set; }
+        public string MI { get; set; }
         public string LName { get; set; }
-        public int WNum { get; set; }
-        //public DateTime DOB { get; set; }
+        public string WNum { get; set; }
         public string Major { get; set; }
         public string Degree { get; set; }
         public bool Grad { get; set; }

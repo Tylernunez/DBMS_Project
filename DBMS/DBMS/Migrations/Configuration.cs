@@ -5,14 +5,14 @@ namespace DBMS.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DBMS.UniversityContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DBMS.SchoolContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(DBMS.UniversityContext context)
+        protected override void Seed(DBMS.SchoolContext context)
         {
             //  This method will be called after migrating to the latest version.
 

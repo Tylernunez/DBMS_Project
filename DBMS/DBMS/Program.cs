@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
+using System.Text.RegularExpressions;
 
 namespace DBMS
 {
@@ -14,7 +15,7 @@ namespace DBMS
         static void Main(string[] args)
         {
             int counter = 0;
-            string line; 
+            string line;
             // Read the file and display it line by line.
             System.IO.StreamReader file =
                new System.IO.StreamReader("queries.txt");
@@ -26,108 +27,77 @@ namespace DBMS
             //Console.Read();
             //file.Close();
 
-            using (var db = new UniversityContext())
+            using (var db = new SchoolContext())
             {
-                //db.Database.Log = Console.Write;
-                //db.Configuration.ProxyCreationEnabled = false;
-                
-                /*var firstName = new Student { FName = "Bob" };
-                db.Students.Add(firstName);
-                db.SaveChanges();*/
-
-                // Display all students from the database 
-                using (UniversityContext context = new UniversityContext())
+                using (SchoolContext context = new SchoolContext())
                 {
-                    //this is where things starting working out!!!!!!!
-                    /*var query = from Course in db.Courses
-                                where Course.Id == 1
-                                select Course;
-                
-                    foreach (var item in query)
-                    {
-                        Console.Write(item.Name + ",");
-                        Console.Write(item.Abbr);
-                        Console.Write(item.Number + ",");
-                        Console.Write(item.Description);
-                    }*/
-
                     var query1 = from s in db.Courses
-                                where s.Abbr == "CMPS"
-                                select s;
+                                 where s.Abbr == "CMPS"
+                                 select s;
 
                     foreach (var s in query1)
                     {
+                        Console.WriteLine(s.Name);
+                    }
+
+                    var query2 = from q in db.Students
+                                 where q.Major == "Computer Science"
+                                 select q;
+
+                    foreach (var q in query2)
+                    {
                         counter++;
-                        Console.Write(counter +".");
-                        Console.Write(s.Name);
+                        Console.Write(counter + ".");
+                        Console.Write(q.FName);
+                        Console.Write(" ");
+                        Console.Write(q.LName);
+                        Console.Write(" ");
+                    }
+                    var query3 = from r in db.Courses
+                                 where r.Credit > 3
+                                 select r;
+
+                    foreach (var r in query3)
+                    {
+                        counter++;
+                        Console.Write(counter + ".");
+                        Console.Write(r.Name);
+                        Console.Write(" ");
+                        Console.Write(r.Number);
                         Console.Write(" ");
                     }
                     counter = 0;
-                    //Course[] classArray = null
-                    //List<Course> cmpsClass = classArray.Where(s => s.Abbr == "CMPS")
+                    
                 }
-                Console.Read();
-                /* Console.WriteLine("Enter a Query:");
-                 string input = Console.ReadLine();
-
-                 db.Database.ExecuteSqlCommand(input);
-                 */
-                /*Console.WriteLine("All students in the database:");
-                foreach (var item in query)
-                {
-                    Console.WriteLine(item.FName);
-                }*/
             }
+            Console.Read();
+            /* Console.WriteLine("Enter a Query:");
+             string input = Console.ReadLine();
+
+             db.Database.ExecuteSqlCommand(input);
+             */
+            /*Console.WriteLine("All students in the database:");
+            foreach (var item in query)
+            {
+                Console.WriteLine(item.FName);
+            }*/
         }
+
 
         public static void ExecuteLine(string command)
         {
-            /*var word = command.Substring(0, command.IndexOf(' '));
-            if (word == "SELECT")
-            {
-                select(command);
-                return;
-            }*/
-            
-            using (var db = new UniversityContext())
+
+            using (var db = new SchoolContext())
             {
                 db.Database.ExecuteSqlCommand(command);
                 db.SaveChanges();
-                
-                //CREATE TABLE tableTest(test1 varchar(255), test2 int, test3 varchar(255));
-                //INSERT INTO tableTest(test1, test2, test3) VALUES('hello', 28, 'goodbye');
-                //CREATE VIEW viewTest AS SELECT test1, test2, test3 FROM tableTest;
-                //DROP TABLE Students;
             }
-        }
-
-        public static void select(string command)
-        {
-
-            using (var db = new UniversityContext())
-            {
-
-                db.Database.ExecuteSqlCommand(command);
-                db.SaveChanges();
-            }
-
-
-
-            //IEnumerable<Object> selectCmd = db.Students.SqlQuery(command).ToList();
-            //selectCmd.ForEach(db.Students => db.Students.ForEach(Console.WriteLine));
-
-            /*var obContext = ((IObjectContextAdapter)db).ObjectContext;
-            IEnumerable<Object> results = obContext.ExecuteStoreQuery<Object>(command);
-            foreach(Object i in results)
-            {
-                string print = i.ToString();
-                Console.Write(print);
-            }
-            */
-        }
-            
         }
     }
+
+}
+
+   
 
     
 
