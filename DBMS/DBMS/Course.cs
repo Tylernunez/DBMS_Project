@@ -15,6 +15,7 @@ namespace DBMS
         public int Number { get; set; }
         public string Description { get; set; }
         public int Credit { get; set; }
+        public int Semester_Id { get; set; }
 
         public virtual List<Course> Courses { get; set; }
     }

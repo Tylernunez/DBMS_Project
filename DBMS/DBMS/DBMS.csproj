@@ -58,6 +58,10 @@
     <Compile Include="Migrations\201707180557582_init.Designer.cs">
       <DependentUpon>201707180557582_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707181657498_addGrade.cs" />
+    <Compile Include="Migrations\201707181657498_addGrade.Designer.cs">
+      <DependentUpon>201707181657498_addGrade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +77,12 @@
     <EmbeddedResource Include="Migrations\201707180557582_init.resx">
       <DependentUpon>201707180557582_init.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707181657498_addGrade.resx">
+      <DependentUpon>201707181657498_addGrade.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UsedQueries.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
