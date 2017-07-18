@@ -29,8 +29,6 @@ namespace DBMS
 
             using (var db = new SchoolContext())
             {
-                using (SchoolContext context = new SchoolContext())
-                {
                     var query1 = from s in db.Courses
                                  where s.Abbr == "CMPS"
                                  select s;
@@ -41,7 +39,7 @@ namespace DBMS
                     }
 
                     var query2 = from q in db.Students
-                                 where q.Major == "Computer Science"
+                                 where q.Major == "CMPS"
                                  select q;
 
                     foreach (var q in query2)
@@ -68,7 +66,7 @@ namespace DBMS
                     }
                     counter = 0;
                     
-                }
+                
             }
             Console.Read();
             /* Console.WriteLine("Enter a Query:");
